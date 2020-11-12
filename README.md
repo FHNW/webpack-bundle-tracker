@@ -16,6 +16,20 @@ yarn add --dev webpack-bundle-tracker
 
 <br>
 
+## Config FHNW
+
+Use `relativePath` for bundle location
+
+```
+new BundleTracker({
+  path: paths.statsRoot,
+  relativePath: '/bundles',
+  filename: isEnvProduction
+    ? "webpack-stats.prod.json"
+    : "webpack-stats.dev.json"
+})
+```
+
 ## Usage
 
 ```javascript
